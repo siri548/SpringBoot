@@ -1,0 +1,108 @@
+-------------------------------------------------------------------------------
+Test set: com.example.song.SongControllerTests
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 13, Skipped: 0, Time elapsed: 24.301 s <<< FAILURE! - in com.example.song.SongControllerTests
+testgetSongs  Time elapsed: 1.106 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testGetNotFound  Time elapsed: 0.995 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testGetSongById  Time elapsed: 0.804 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testPostSong  Time elapsed: 0.415 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testAfterPost  Time elapsed: 0.398 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testDbAfterPost  Time elapsed: 0.79 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testPutNotFound  Time elapsed: 0.899 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testPutSong  Time elapsed: 0.595 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testAfterPut  Time elapsed: 0.908 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testDbAfterPut  Time elapsed: 1.2 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testDeleteNotFound  Time elapsed: 1.295 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testDeleteSong  Time elapsed: 0.703 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
+testAfterDelete  Time elapsed: 0.803 s  <<< ERROR!
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: 
+Failed to execute SQL script statement #1 of class path resource [data.sql]: INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1); nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Column "SONGNAME" not found; SQL statement:
+INSERT INTO playlist (songName, lyricist, singer, musicDirector) SELECT 'Butta Bomma', 'Ramajogayya Sastry', 'Armaan Malik', 'Thaman S' WHERE NOT EXISTS (SELECT 1 FROM playlist WHERE songid = 1) [42122-214]
+
