@@ -1,0 +1,12 @@
+.heading {
+    font-size: 27px;
+    text-align: center;
+    padding: 4px;
+    background-color: rgb(27, 22, 161);
+    color: white;
+    /* "white" instead of "White" */
+}
+
+.table-border {
+    border-collapse: co
+}
